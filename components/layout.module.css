@@ -1,0 +1,17 @@
+.nav {
+	display: flex;
+	gap: 1rem;
+	align-items: flex-start;
+}
+
+.nav *:hover {
+	text-decoration: underline;
+}
+
+.nav * {
+	font-size: 1.25rem;
+}
+
+.content {
+	width: 100%;
+}
