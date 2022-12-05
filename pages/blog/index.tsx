@@ -1,7 +1,7 @@
 import { GetStaticProps, NextPage } from "next"
 import Head from "next/head"
 import Link from "next/link"
-import { GetPostData, Post } from "./types"
+import { GetPostData } from "../../types"
 import styles from "./blog.module.css"
 
 const BlogPage: NextPage<{ postData: GetPostData }> = ({ postData }) => {
@@ -16,8 +16,10 @@ const BlogPage: NextPage<{ postData: GetPostData }> = ({ postData }) => {
 						<div className={styles.post}>
 							<p>{post.title}</p>
 							<div>
-								{post.tags.map((tag) => (
-									<p className={styles.tags}>{tag}</p>
+								{post.tags.map((tag, index) => (
+									<p className={styles.tags} key={index}>
+										{tag}
+									</p>
 								))}
 							</div>
 						</div>
