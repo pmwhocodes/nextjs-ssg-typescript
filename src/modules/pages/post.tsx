@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from "next"
 import { ParsedUrlQuery } from "querystring"
-import { Post } from "../../types"
+import { Post } from "../../../types"
 
 interface Params extends ParsedUrlQuery {
 	id: string

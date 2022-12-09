@@ -1,7 +1,7 @@
 import { GetStaticProps, NextPage } from "next"
 import Head from "next/head"
 import Link from "next/link"
-import { GetPostData } from "../../types"
+import { GetPostData } from "../../../types"
 import styles from "./blog.module.css"
 
 const BlogPage: NextPage<{ postData: GetPostData }> = ({ postData }) => {
